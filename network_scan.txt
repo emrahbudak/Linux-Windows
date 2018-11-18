@@ -1,0 +1,3 @@
+//firstly you have to create ip-list.txt file
+
+for /L %i in (0,1,255) do ping -n 1 -w 250 192.168.1.%i>>ip-list.txt
